@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "霞鹜文楷";
+  src: url("../fonts/LXGWRedDream_subset.ttf");
+}
+* {
+	font-family: "霞鹜文楷", "Source Code Pro",  "微软雅黑", "PingFang SC", "Droid Sans Fallback", "Sans Serif";
+	font-size: 16px;
+/*	width: 19.7cm;*/
+}
+.wu-note {
+	font-weight:bold;
+	color:red;
+}
+.center{
+	text-align:center;
+}
+.zhi-note{
+	font-weight:bold;
+	color:orange;
+}
+.tx-note {
+	font-weight:bold;
+	color:green;
+}
+.comment{
+    color:black;
+}
+/*浏览器阅读HTML文件时，js将.adaptive-double-line改为.double-line*/
+.double-line {
+    display: inline-block;
+    line-height: 1.2; /* 调整行高 */
+    vertical-align: middle;
+    color:blue;
+    word-break: break-all; 
+}
+.double-line span {
+    display: inline-block;
+    line-height: 1.2em; /* 调整行高 */
+    font-size: 0.8em; /* 调整字体大小 */
+    color:blue;
+}
+/*制作为EPUB文件时取消js功能，保留.adaptive-double-line*/
+.adaptive-double-line {
+    display: inline;
+    line-height: 1.0; /* 调整行高 */
+    font-size: 0.8em;
+    color:blue;
+}
+.container {
+    width: 100%; /* 容器宽度 */
+    margin: 0 auto;
+    padding: 10px;
+}
+.pic-title {
+    text-align: center;
+    font-size: 0.8em;
+}
+.emph {
+	font-size:1.2em;
+	color:blue;
+	font-weight:bold;
+}
+.remove {
+	color: pink;
+	text-decoration: line-through 2px;
+	font-weight:bold;
+}
+.replace {
+	color: green;
+	font-weight:bold;
+}
+span span.remove,  span span.replace {
+	font-size:1em;
+}
+.note-block {
+	border: 1px dashed #66BBCC;
+	margin: 1em 1em 0.5em 1em;
+	padding: 5px !important;
+	box-shadow: 0 0 1em #AAAAAA;
+	clear: both;
+	background-color:beige;
+	/*visibility: hidden;*/
+}
+.small {
+	font-size: 0.9em;
+	color: darkgreen;
+	font-weight: bold;
+}
+.right {
+	text-align: right;
+}
+p, p.normal {
+	text-indent:2em;
+	line-height: 2.0em; 
+}
+span {
+	text-indent:0em;
+}
+a {
+    text-decoration: none;
+    font-weight:bold;
+    color:rgb(255, 0, 255);
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+aside {
+   margin-bottom: 0.5em;
+}
+hr {
+	width:100%;
+	border: 2px solid purple;
+}
+sup, .comment a {
+	font-size: 0.6em;
+	vertical-align: super;
+}
+h3 {	
+	font-size: 2em;
+	text-align: center;
+}
+h4 {	
+	font-size: 1.5em;
+	text-align: center;
+}
+#note {
+    display: none;
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+.note-content {
+    background: linear-gradient(to bottom, yellow, lightpink);
+    padding: 2em;
+    border-radius: 8px;
+    max-width: 80vw;
+    max-height: 60vh;
+    overflow: auto;
+    box-shadow: 0 2px 16px rgba(150,120,200,0.5);
+}
+.poem, .poem-chapter {
+    width: 100%;
+    text-align: center;
+    background-color: beige;
+}
+
+.poem-sentence {
+    display: block;
+    width:15em;         /* 可根据需要调整宽度 */
+    margin: 0 auto;       /* 居中显示 */
+    text-align: left;     /* 内容左对齐 */
+    white-space: nowrap;    /* 不换行 */
+    overflow: visible;      /* 溢出内容可见 */    
+    line-height: 1.618em;
+}
+.ref {
+	background: beige;
+	padding: 0.5em;
+	border-radius: 8px;
+	box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+}
+
+.story {
+    padding:1em;
+    background: #eee;
+}
